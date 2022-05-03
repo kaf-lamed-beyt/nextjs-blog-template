@@ -27,3 +27,11 @@ export const Block = styled.pre`
     overflow: auto;
   }
 `;
+
+export const Code = styled.code`
+  code {
+    background: var(--grey);
+    padding: 5px 3px;
+    border-radius: 3px;
+  }
+`;

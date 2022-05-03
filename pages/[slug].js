@@ -9,7 +9,7 @@ import rehypeCodeTitles from "rehype-code-titles";
 import { serialize } from "next-mdx-remote/serialize";
 import { getSlug, getArticleFromSlug } from "@utils/mdx";
 import "highlight.js/styles/atom-one-dark-reasonable.css";
-import { CodeBlock, InlineSnippet } from "@mdx-components/index";
+import { CodeBlock, InlineSnippet } from "@components/mdx-components";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
 export default function BlogPost({ post: { source, frontmatter } }) {
