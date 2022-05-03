@@ -30,6 +30,8 @@ You can fork or clone the repository and use it and use it as you want.
 
   The custom MDX components can be imported in `[slug].js` which would eventaully make it available for use in all the `.mdx` files you create in the "articles" directory.
 
+  the generic styles for the codeblock and the unique article itself can be found in `styles/globals.scss`
+
 - utils: this folder houses the main logic behind this blog template
 
 - jsconfig.json: gives you the flexibility that doesn't come with traversing the directories in your codebase. With this config file I've been able to create file mappings based on the `baseUrl` of this project.
@@ -62,3 +64,65 @@ You can also tweak the config file to your taste.
   }
 }
 ```
+
+### The tools used in building this template
+
+- gray-matter: parses the content in the .mdx files to readable HTML content.
+
+```bash
+npm install gray-matter
+```
+
+- reading-time: assigns an approximate time to read a blog post or article based on the word count.
+
+```bash
+npm install reading-time
+```
+
+- next-mdx-remote: does the background compilation of the MDX files by allowing them to be loaded within Next.js' `getStaticProps` or `getServerSideProps` data-fetching method, and hydrated properly on the client.
+
+```bash
+npm install next-mdx-remote@3.0.8
+```
+
+Check this [github issue](https://github.com/vercel/next.js/issues/36646) to understand why you shouldn't install the latest version
+
+- glob: gives us access to match the file patterns in data/articles, which we'll be using as the slug of the article.
+
+```bash
+npm install glob
+```
+
+- dayjs: a JavaScript library that helps to parse, manipulate, validate, and display dates that we would be adding to the metadata of each article.
+
+```bash
+npm install dayjs
+```
+
+- rehype-highlight: adds syntax highlighting to our code blocks
+
+```bash
+npm install rehype-highlight
+```
+
+- rehype-autolink-headings: is a plugin that adds links to headings from h1 to h6
+
+```bash
+npm install rehype-autolink-headings
+```
+
+- rehype-code-titles: adds language/file titles to your code snippets
+
+```bash
+npm install rehype-code-titles
+```
+
+- rehype-slug is a plugin that adds an id attributes to headings
+
+```bash
+npm install rehype-slug
+```
+
+### Want to contribute?
+
+Read this [guide](CONTRIBUTING.md) to see how you can contribute to this project.

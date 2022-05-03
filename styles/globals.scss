@@ -16,3 +16,58 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+// global styles that'll be used for the articles
+.article-container {
+  padding: 20px 300px;
+  margin-top: 50px;
+
+  .article-title {
+    font-size: 60px;
+  }
+
+  .content {
+    padding: 50px 0;
+
+    p {
+      line-height: 37px;
+    }
+
+    pre {
+      width: 100%;
+      height: 100%;
+      background: var(--lght-grey);
+      padding: 25px 20px;
+      margin: 20px 0;
+      border-radius: 7px;
+      overflow: auto;
+
+      code {
+        font-family: var(--fira-code);
+        counter-reset: line;
+        color: #fff;
+        line-height: 20px;
+      }
+
+      @media only screen and (min-width: 0px) and (max-width: 576px) {
+        overflow: auto;
+        padding: 25px 14px;
+
+        ::-webkit-scrollbar {
+          width: 0 !important;
+        }
+      }
+
+      @media only screen and (min-width: 992px) and (max-width: 1024px) {
+        overflow: auto;
+      }
+    }
+
+    code {
+      background: var(--grey);
+      padding: 5px 3px;
+      border-radius: 3px;
+      color: #fff;
+    }
+  }
+}
