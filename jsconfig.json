@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@mdx-components/*": ["src/components/mdx-components/*"],
+      "@styles/*": ["/styles/*"],
+      "@utils/*": ["src/utils/*"]
+    }
+  }
+}
