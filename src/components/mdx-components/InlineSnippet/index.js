@@ -10,11 +10,9 @@ export const Code = styled.code`
   }
 `;
 
-const InlineSnippet = ({ children, ...props }) => {
+export const InlineSnippet = ({ children, ...props }) => {
   return <Code {...props}>{children}</Code>;
 };
-
-export default InlineSnippet;
 
 propTypes.InlineSnippet = {
   children: propTypes.node.isRequired,
