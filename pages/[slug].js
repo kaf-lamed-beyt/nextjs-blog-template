@@ -9,8 +9,8 @@ import rehypeCodeTitles from "rehype-code-titles";
 import { serialize } from "next-mdx-remote/serialize";
 import { getSlug, getArticleFromSlug } from "@utils/mdx";
 import "highlight.js/styles/atom-one-dark-reasonable.css";
+import { CodeBlock, InlineSnippet } from "@mdx-components/";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
-// import { SectionTitle, Text } from '../../data/components/mdx-components'
 
 export default function BlogPost({ post: { source, frontmatter } }) {
   return (
@@ -25,7 +25,10 @@ export default function BlogPost({ post: { source, frontmatter } }) {
           {frontmatter.readingTime}
         </p>
         <div className="content">
-          <MDXRemote {...source} components={{ Image, SectionTitle, Text }} />
+          <MDXRemote
+            {...source}
+            components={{ Image, CodeBlock, InlineSnippet }}
+          />
         </div>
       </div>
     </React.Fragment>

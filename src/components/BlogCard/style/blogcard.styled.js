@@ -6,7 +6,6 @@ export const Card = styled.div`
   margin-top: -10px;
   padding: 10px 18px;
   margin-bottom: 34px;
-  border-bottom: 2px solid var(--lght-grey);
 
   .title {
     color: #000;
@@ -15,19 +14,8 @@ export const Card = styled.div`
   }
 
   .summary {
-    color: var(--alt-text);
-    font-family: var(--plex-serif);
     font-size: 16px;
     padding: 14px 0;
-  }
-
-  .reading-time {
-    color: var(--alt-text);
-  }
-
-  .date {
-    color: var(--alt-text);
-    font-family: var(--dosis);
   }
 
   .foot-info {
@@ -39,7 +27,6 @@ export const Card = styled.div`
       display: flex;
 
       li {
-        color: var(--alt-text);
         list-style: none;
         padding: 0px 8px 0 0;
       }

@@ -8,11 +8,6 @@
 module.exports = {
   reactStrictMode: true,
 
-  images: {
-    loader: "akamai",
-    path: "",
-  },
-
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,

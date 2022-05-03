@@ -1,2 +1,14 @@
 // you can add your css variables here
-$montserrat-alt: "Montserrat Alternates", sans-serif;
+:root {
+  // font families
+  --montserrat-alt: "Montserrat Alternates", sans-serif;
+
+  // colors
+  --dark-primary: #000009;
+  --lght-grey: #100f0f;
+  --lght-grey-dark: #0e0e0e;
+  --grey: #0f0f0f;
+  --alt-text: rgba(189, 181, 181, 0.804);
+  --text-primary: #fff;
+  --secondary: ghostwhite;
+}
